@@ -31,6 +31,7 @@ namespace FoodCourt_Management
             string m = mname.Text;
             string l = lname.Text;
             string reg = regno.Text;
+            int cno = int.Parse(reg.Substring(reg.Length - 5));    
             string theDate = datepicker.Value.ToString("dd-MMM-yyyy");
             string add = address.Text;
             string phone = phno.Text;
@@ -48,7 +49,9 @@ namespace FoodCourt_Management
                 + add + "')";
             cm.CommandType = CommandType.Text;
             cm.ExecuteNonQuery();
-            MessageBox.Show("Inserted");
+            cm.CommandText = "insert into card values(" + cno + ",0" + ",'active')";
+            cm.ExecuteNonQuery();
+            MessageBox.Show("Your card number is " + cno);
             conn.Close();
         }
     }
