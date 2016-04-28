@@ -11,10 +11,10 @@ using Oracle.DataAccess.Client;
 using Oracle.DataAccess.Types;
 namespace FoodCourt_Management
 {
-    public partial class StudentRegistration : Form
+    public partial class Employee_Registration : Form
     {
         OracleConnection conn;
-        public StudentRegistration()
+        public Employee_Registration()
         {
             InitializeComponent();
         }
@@ -31,20 +31,21 @@ namespace FoodCourt_Management
             string m = mname.Text;
             string l = lname.Text;
             string reg = regno.Text;
-            int cno = int.Parse(reg.Substring(reg.Length - 5));    
             string theDate = datepicker.Value.ToString("dd-MMM-yyyy");
             string add = address.Text;
             string phone = phno.Text;
-            int course = coursebox.SelectedIndex;
+            string course = designation.Text;
+            int salary = int.Parse(sal.Text);
             OracleCommand cm = new OracleCommand();
             cm.Connection = conn;
-            cm.CommandText = "insert into student values('"
+            cm.CommandText = "insert into staff values('"
                 + reg + "','"
                 + f + "','"
                 + m + "','"
                 + l + "','"
-                + theDate + "',"
-                + course + ",'"
+                + theDate + "','"
+                + course + "',"
+                + salary + ",'"
                 + phone + "','"
                 + add + "')";
             cm.CommandType = CommandType.Text;
@@ -57,9 +58,6 @@ namespace FoodCourt_Management
                 MessageBox.Show("Error");
                 return;
             }
-            cm.CommandText = "insert into card values(" + cno + ",0" + ",'active')";
-            cm.ExecuteNonQuery();
-            MessageBox.Show("Your card number is " + cno);
             conn.Close();
         }
     }

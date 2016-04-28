@@ -33,9 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Oracle.DataAccess, Version=4.112.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,14 +52,172 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPayment.Designer.cs">
+      <DependentUpon>AddPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlockCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlockCard.Designer.cs">
+      <DependentUpon>BlockCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardDetails.Designer.cs">
+      <DependentUpon>CardDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardList.Designer.cs">
+      <DependentUpon>CardList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Registration.Designer.cs">
+      <DependentUpon>Employee Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeedbackForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeedbackForm.Designer.cs">
+      <DependentUpon>FeedbackForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Feedbacks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feedbacks.Designer.cs">
+      <DependentUpon>Feedbacks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FoodItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FoodItems.Designer.cs">
+      <DependentUpon>FoodItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff.Designer.cs">
+      <DependentUpon>Staff.cs</DependentUpon>
+    </Compile>
     <Compile Include="Student Registration.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Student Registration.Designer.cs">
       <DependentUpon>Student Registration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Student.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Student.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StudentDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentDetails.Designer.cs">
+      <DependentUpon>StudentDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="studentLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentLogin.Designer.cs">
+      <DependentUpon>studentLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentsList.Designer.cs">
+      <DependentUpon>StudentsList.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddPayment.resx">
+      <DependentUpon>AddPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlockCard.resx">
+      <DependentUpon>BlockCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardDetails.resx">
+      <DependentUpon>CardDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardList.resx">
+      <DependentUpon>CardList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Registration.resx">
+      <DependentUpon>Employee Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeedbackForm.resx">
+      <DependentUpon>FeedbackForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feedbacks.resx">
+      <DependentUpon>Feedbacks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FoodItems.resx">
+      <DependentUpon>FoodItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,10 +226,90 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Staff.resx">
+      <DependentUpon>Staff.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Student Registration.resx">
       <DependentUpon>Student Registration.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="StudentDetails.resx">
+      <DependentUpon>StudentDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentLogin.resx">
+      <DependentUpon>studentLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentsList.resx">
+      <DependentUpon>StudentsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet3.xsc">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet3.xss">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet4.xsc">
+      <DependentUpon>DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet4.xss">
+      <DependentUpon>DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet5.xsc">
+      <DependentUpon>DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet5.xss">
+      <DependentUpon>DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet6.xsc">
+      <DependentUpon>DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet6.xss">
+      <DependentUpon>DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -76,9 +319,29 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Student.xsc">
+      <DependentUpon>Student.xsd</DependentUpon>
+    </None>
+    <None Include="Student.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Student.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Student.xss">
+      <DependentUpon>Student.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BULL-Forms-Colorado-DORA-Background-Home-Header-Content.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colorful-abstract-backgrounds-design-aqua-blue-color-abstract-background-design-79051.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colorful-abstract-backgrounds-design-blue-glass--abstract-light-and-colour-wallpaper-78941.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
